@@ -4,7 +4,11 @@ import type { CommonConfig } from "../common/common.ts";
  * ギャラリーのアートワークのフレームの設定を定義する型
  * ArtworkFlameConfig は、アートワークのフレームのメッシュ、ジオメトリ、およびマテリアルの設定を含む
  */
-export type ArtworkFrameConfig = CommonConfig & {};
+export type ArtworkFrameConfig = Omit<CommonConfig, "geometry"> & {
+	geometry: {
+		args: [number, number, number];
+	};
+};
 
 /**
  * ギャラリーのアートワークのフレームのプロパティを定義する型

@@ -7,7 +7,7 @@ export const ArtworkFrame = () => {
 			rotation: [0, 0, 0],
 		},
 		geometry: {
-			args: [2.2, 1.4],
+			args: [2.2, 1.4, 0.1],
 		},
 		material: {
 			color: "#8B4513",
