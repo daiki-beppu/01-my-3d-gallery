@@ -1,6 +1,5 @@
 import { useTexture } from "@react-three/drei";
-import type { Texture } from "three";
-import type { FloorConfig } from "../../../types/gallery/floor/floor.ts";
+import type { FloorConfig } from "../../../types/index..ts";
 
 export const GalleryFloor = () => {
 	const floorTexture = useTexture(

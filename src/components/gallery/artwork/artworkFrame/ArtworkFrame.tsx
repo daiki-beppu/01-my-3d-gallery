@@ -1,7 +1,7 @@
-import type { ArtworkFlameConfig } from "../../../../types/gallery/artwork/artwork.ts";
+import type { ArtworkFrameConfig } from "../../../../types/index..ts";
 
-export const ArtworkFlame = () => {
-	const artworkFlameConfig: ArtworkFlameConfig = {
+export const ArtworkFrame = () => {
+	const artworkFlameConfig: ArtworkFrameConfig = {
 		mesh: {
 			position: [0, 0, 0.02],
 			rotation: [0, 0, 0],

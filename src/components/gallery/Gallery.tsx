@@ -1,13 +1,8 @@
+import type { ArtworkData } from "../../types/index..ts";
 import { Artwork } from "./artwork/Artwork.tsx";
 import { GalleryCeiling } from "./ceiling/GalleryCeiling.tsx";
 import { GalleryFloor } from "./floor/GalleryFloor.tsx";
 import { GalleryWalls } from "./wall/GalleryWalls.tsx";
-
-type ArtworkData = {
-	key: string;
-	position: [number, number, number];
-	color: string;
-};
 
 const artworkPosition: ArtworkData[] = [
 	{ key: "artwork-01", position: [0, 2, -9.8], color: "red" },

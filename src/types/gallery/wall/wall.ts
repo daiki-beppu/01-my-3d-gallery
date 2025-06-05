@@ -1,4 +1,3 @@
-import type { Texture } from "three";
 import type { CommonConfig } from "../common/common.ts";
 
 /**

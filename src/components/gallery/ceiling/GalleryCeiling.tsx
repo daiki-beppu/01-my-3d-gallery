@@ -1,6 +1,5 @@
 import { useTexture } from "@react-three/drei";
-import type { Texture } from "three";
-import type { CeilingConfig } from "../../../types/gallery/ceiling/ceiling.ts";
+import type { CeilingConfig } from "../../../types/index..ts";
 
 export const GalleryCeiling = () => {
 	const ceilingTexture = useTexture(

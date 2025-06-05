@@ -1,14 +1,40 @@
 import type { CommonConfig } from "../common/common.ts";
 
-export type ArtworkFlameConfig = CommonConfig & {};
+/**
+ * ギャラリーのアートワークのフレームの設定を定義する型
+ * ArtworkFlameConfig は、アートワークのフレームのメッシュ、ジオメトリ、およびマテリアルの設定を含む
+ */
+export type ArtworkFrameConfig = CommonConfig & {};
 
-export type ArtworkProps = {
+/**
+ * ギャラリーのアートワークのフレームのプロパティを定義する型
+ * ArtworkFrameProps は、アートワークのフレームの位置と色を含む
+ */
+export type ArtworkFrameProps = {
 	position: [number, number, number];
 	color: string;
 };
 
+/**
+ * ギャラリーのアートワークのボディの設定を定義する型
+ * ArtworkBodyConfig は、アートワークのボディのメッシュ、ジオメトリ、およびマテリアルの設定を含む
+ */
 export type artworkBodyConfig = CommonConfig & {};
 
-export type ArtWorkProps = {
+/**
+ * ギャラリーのアートワークのボディのプロパティを定義する型
+ * ArtWorkBodyProps は、アートワークのボディの色を含む
+ */
+export type ArtWorkBodyProps = {
+	color: string;
+};
+
+/**
+ * ギャラリーのアートワークのデータを定義する型
+ * ArtworkData は、アートワークのキー、位置、および色を含む
+ */
+export type ArtworkData = {
+	key: string;
+	position: [number, number, number];
 	color: string;
 };

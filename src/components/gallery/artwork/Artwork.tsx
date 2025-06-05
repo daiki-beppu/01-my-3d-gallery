@@ -1,11 +1,11 @@
-import type { ArtworkProps } from "../../../types/gallery/artwork/artwork.ts";
+import type { ArtworkFrameProps } from "../../../types/index..ts";
 import { ArtworkBody } from "./artworkBody/ArtworkBody.tsx";
-import { ArtworkFlame } from "./artworkFlame/ArtworkFlame.tsx";
+import { ArtworkFrame } from "./artworkFrame/ArtworkFrame.tsx";
 
-export const Artwork = (props: ArtworkProps) => {
+export const Artwork = (props: ArtworkFrameProps) => {
 	return (
 		<group position={props.position}>
-			<ArtworkFlame />
+			<ArtworkFrame />
 			<ArtworkBody color={props.color} />
 		</group>
 	);

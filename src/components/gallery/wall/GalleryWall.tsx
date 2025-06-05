@@ -2,7 +2,7 @@ import { useTexture } from "@react-three/drei";
 import type {
 	GalleryWallConfig,
 	GalleryWallProps,
-} from "../../../types/gallery/wall/wall.ts";
+} from "../../../types/index..ts";
 
 export const GalleryWall = (props: GalleryWallProps) => {
 	const wallTexture = useTexture(
