@@ -1,15 +1,28 @@
+type artworkBodyConfig = {
+	mesh: {
+		position: [number, number, number];
+		rotation: [number, number, number];
+	};
+	geometry: {
+		args: [number, number];
+	};
+	material: {
+		color: string;
+	};
+};
+
 type ArtWorkProps = {
 	color: string;
 };
 
 export const ArtworkBody = (props: ArtWorkProps) => {
-	const artworkBodyConfig = {
+	const artworkBodyConfig: artworkBodyConfig = {
 		mesh: {
-			position: [0, 0, 0.1] as const,
-			rotation: [0, 0, 0] as const,
+			position: [0, 0, 0.1],
+			rotation: [0, 0, 0],
 		},
 		geometry: {
-			args: [2, 1.2] as const,
+			args: [2, 1.2],
 		},
 		material: {
 			color: props.color,

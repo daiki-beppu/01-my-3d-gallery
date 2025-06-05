@@ -3,15 +3,31 @@ import { GalleryCeiling } from "./ceiling/GalleryCeiling.tsx";
 import { GalleryFloor } from "./floor/GalleryFloor.tsx";
 import { GalleryWalls } from "./wall/GalleryWalls.tsx";
 
+type ArtworkData = {
+	key: string;
+	position: [number, number, number];
+	color: string;
+};
+
+const artworkPosition: ArtworkData[] = [
+	{ key: "artwork-01", position: [0, 2, -9.8], color: "red" },
+	{ key: "artwork-02", position: [-4, 2, -9.8], color: "green" },
+	{ key: "artwork-03", position: [4, 2, -9.8], color: "blue" },
+];
+
 export const Gallery = () => {
 	return (
 		<>
 			<GalleryFloor />
 			<GalleryWalls />
 			<GalleryCeiling />
-			<Artwork position={[0, 2, -9.8]} color="red" />
-			<Artwork position={[-4, 2, -9.8]} color="green" />
-			<Artwork position={[4, 2, -9.8]} color="blue" />
+			{artworkPosition.map((artwork) => (
+				<Artwork
+					key={artwork.key}
+					position={artwork.position}
+					color={artwork.color}
+				/>
+			))}
 		</>
 	);
 };

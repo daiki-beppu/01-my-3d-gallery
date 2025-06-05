@@ -1,14 +1,27 @@
+type ArtworkFlameConfig = {
+	mesh: {
+		position: [number, number, number];
+		rotation: [number, number, number];
+	};
+	geometry: {
+		args: [number, number, number];
+	};
+	material: {
+		color: string;
+	};
+};
+
 export const ArtworkFlame = () => {
-	const artworkFlameConfig = {
+	const artworkFlameConfig: ArtworkFlameConfig = {
 		mesh: {
-			position: [0, 0, 0.02] as const,
-			rotation: [0, 0, 0] as const,
+			position: [0, 0, 0.02],
+			rotation: [0, 0, 0],
 		},
 		geometry: {
-			args: [2.2, 1.4, 0.1] as const,
+			args: [2.2, 1.4, 0.1],
 		},
 		material: {
-			color: "#8B4513" as const,
+			color: "#8B4513",
 		},
 	};
 	const { mesh, geometry, material } = artworkFlameConfig;

@@ -1,24 +1,39 @@
 import { useTexture } from "@react-three/drei";
+import type { Texture } from "three";
+
+type GalleryWallConfig = {
+	mesh: {
+		position: [number, number, number];
+		rotation: [number, number, number];
+	};
+	geometry: {
+		args: [number, number];
+	};
+	material: {
+		color: string;
+		map: Texture;
+	};
+};
 
 type GalleryWallProps = {
-	meshPosition: [number, number, number];
-	meshRotation?: [number, number, number];
+	position: [number, number, number];
+	rotation?: [number, number, number];
 };
 
 export const GalleryWall = (props: GalleryWallProps) => {
 	const wallTexture = useTexture(
 		"/textures/gallery/wall/marble_01_diff_2k.jpg",
 	);
-	const galleryWallConfig = {
+	const galleryWallConfig: GalleryWallConfig = {
 		mesh: {
-			position: props.meshPosition,
-			rotation: props.meshRotation || ([0, 0, 0] as const),
+			position: props.position,
+			rotation: props.rotation || [0, 0, 0],
 		},
 		geometry: {
-			args: [20, 20] as const,
+			args: [20, 20],
 		},
 		material: {
-			color: "#f0f0f0" as const,
+			color: "#f0f0f0",
 			map: wallTexture,
 		},
 	};
