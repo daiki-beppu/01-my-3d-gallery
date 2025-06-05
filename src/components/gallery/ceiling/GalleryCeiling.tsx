@@ -1,19 +1,6 @@
 import { useTexture } from "@react-three/drei";
 import type { Texture } from "three";
-
-type CeilingConfig = {
-	mesh: {
-		position: [number, number, number];
-		rotation: [number, number, number];
-	};
-	geometry: {
-		args: [number, number];
-	};
-	material: {
-		color: string;
-		map: Texture;
-	};
-};
+import type { CeilingConfig } from "../../../types/gallery/ceiling/ceiling.ts";
 
 export const GalleryCeiling = () => {
 	const ceilingTexture = useTexture(

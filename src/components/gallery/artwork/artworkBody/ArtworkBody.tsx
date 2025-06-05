@@ -1,19 +1,7 @@
-type artworkBodyConfig = {
-	mesh: {
-		position: [number, number, number];
-		rotation: [number, number, number];
-	};
-	geometry: {
-		args: [number, number];
-	};
-	material: {
-		color: string;
-	};
-};
-
-type ArtWorkProps = {
-	color: string;
-};
+import type {
+	ArtWorkProps,
+	artworkBodyConfig,
+} from "../../../../types/gallery/artwork/artwork.ts";
 
 export const ArtworkBody = (props: ArtWorkProps) => {
 	const artworkBodyConfig: artworkBodyConfig = {

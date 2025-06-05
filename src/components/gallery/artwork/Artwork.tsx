@@ -1,10 +1,6 @@
+import type { ArtworkProps } from "../../../types/gallery/artwork/artwork.ts";
 import { ArtworkBody } from "./artworkBody/ArtworkBody.tsx";
 import { ArtworkFlame } from "./artworkFlame/ArtworkFlame.tsx";
-
-type ArtworkProps = {
-	position: [number, number, number];
-	color: string;
-};
 
 export const Artwork = (props: ArtworkProps) => {
 	return (

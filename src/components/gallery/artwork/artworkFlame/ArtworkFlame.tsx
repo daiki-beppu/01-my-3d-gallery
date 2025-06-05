@@ -1,15 +1,4 @@
-type ArtworkFlameConfig = {
-	mesh: {
-		position: [number, number, number];
-		rotation: [number, number, number];
-	};
-	geometry: {
-		args: [number, number, number];
-	};
-	material: {
-		color: string;
-	};
-};
+import type { ArtworkFlameConfig } from "../../../../types/gallery/artwork/artwork.ts";
 
 export const ArtworkFlame = () => {
 	const artworkFlameConfig: ArtworkFlameConfig = {
@@ -18,7 +7,7 @@ export const ArtworkFlame = () => {
 			rotation: [0, 0, 0],
 		},
 		geometry: {
-			args: [2.2, 1.4, 0.1],
+			args: [2.2, 1.4],
 		},
 		material: {
 			color: "#8B4513",

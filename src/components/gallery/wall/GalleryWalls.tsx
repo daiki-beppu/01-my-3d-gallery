@@ -1,10 +1,5 @@
+import type { WallData } from "../../../types/gallery/wall/wall.ts";
 import { GalleryWall } from "./GalleryWall.tsx";
-
-type WallData = {
-	key: string;
-	position: [number, number, number];
-	rotation: [number, number, number];
-};
 
 const wallData: WallData[] = [
 	{ key: "wall-01", position: [0, 0, -10], rotation: [0, 0, 0] },

@@ -1,19 +1,6 @@
 import { useTexture } from "@react-three/drei";
 import type { Texture } from "three";
-
-type FloorConfig = {
-	mesh: {
-		position: [number, number, number];
-		rotation: [number, number, number];
-	};
-	geometry: {
-		args: [number, number];
-	};
-	material: {
-		color: string;
-		map: Texture;
-	};
-};
+import type { FloorConfig } from "../../../types/gallery/floor/floor.ts";
 
 export const GalleryFloor = () => {
 	const floorTexture = useTexture(

@@ -1,24 +1,8 @@
 import { useTexture } from "@react-three/drei";
-import type { Texture } from "three";
-
-type GalleryWallConfig = {
-	mesh: {
-		position: [number, number, number];
-		rotation: [number, number, number];
-	};
-	geometry: {
-		args: [number, number];
-	};
-	material: {
-		color: string;
-		map: Texture;
-	};
-};
-
-type GalleryWallProps = {
-	position: [number, number, number];
-	rotation?: [number, number, number];
-};
+import type {
+	GalleryWallConfig,
+	GalleryWallProps,
+} from "../../../types/gallery/wall/wall.ts";
 
 export const GalleryWall = (props: GalleryWallProps) => {
 	const wallTexture = useTexture(
