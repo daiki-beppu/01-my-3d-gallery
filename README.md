@@ -22,7 +22,7 @@ A immersive 3D virtual art gallery built with React, Three.js, and React Three F
   - [🤝 Contributing](#-contributing)
   - [📄 License](#-license)
   - [🙏 Acknowledgments](#-acknowledgments)
-- [3D バーチャルギャラリー](#3d-バーチャルギャラリー)
+- [3D バーチャルギャラリー 日本語はこちら](#3d-バーチャルギャラリー-日本語はこちら)
   - [📖 目次](#-目次)
   - [✨ 機能](#-機能)
   - [🎮 操作方法](#-操作方法)
@@ -195,7 +195,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Texture resources for realistic gallery materials
 
 
-# 3D バーチャルギャラリー
+# 3D バーチャルギャラリー 日本語はこちら
 
 React、Three.js、React Three Fiberで構築された没入型の3Dバーチャル美術館です。美しくレンダリングされたギャラリー空間を歩き回り、インタラクティブな3D環境でアートワークを鑑賞できます。
 
