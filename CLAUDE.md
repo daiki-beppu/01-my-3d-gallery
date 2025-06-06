@@ -23,10 +23,6 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a React-based 3D virtual gallery application built with **React Three Fiber** (R3F) and **Three.js**. The architecture follows a compositional pattern where the 3D scene is constructed from reusable, configurable components representing gallery elements (walls, floor, ceiling, artwork).
 
-## High-Level Architecture Overview
-
-This is a React-based 3D virtual gallery application built with **React Three Fiber** (R3F) and **Three.js**. The architecture follows a compositional pattern where the 3D scene is constructed from reusable, configurable components representing gallery elements (walls, floor, ceiling, artwork).
-
 ### Tech Stack
 - **Frontend**: React 19.1.0 + TypeScript 5.8.3
 - **3D Engine**: Three.js 0.176.0 + React Three Fiber 9.1.2
