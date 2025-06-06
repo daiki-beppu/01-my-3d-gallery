@@ -23,13 +23,13 @@ export type ArtworkFrameProps = {
  * ギャラリーのアートワークのボディの設定を定義する型
  * ArtworkBodyConfig は、アートワークのボディのメッシュ、ジオメトリ、およびマテリアルの設定を含む
  */
-export type artworkBodyConfig = CommonConfig & {};
+export type ArtworkBodyConfig = CommonConfig & {};
 
 /**
  * ギャラリーのアートワークのボディのプロパティを定義する型
  * ArtWorkBodyProps は、アートワークのボディの色を含む
  */
-export type ArtWorkBodyProps = {
+export type ArtworkBodyProps = {
 	color: string;
 };
 

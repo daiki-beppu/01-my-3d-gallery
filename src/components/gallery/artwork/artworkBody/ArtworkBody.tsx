@@ -1,10 +1,10 @@
 import type {
-	ArtWorkBodyProps,
-	artworkBodyConfig,
-} from "../../../../types/index..ts";
+	ArtworkBodyConfig,
+	ArtworkBodyProps,
+} from "../../../../types/index.ts";
 
-export const ArtworkBody = (props: ArtWorkBodyProps) => {
-	const artworkBodyConfig: artworkBodyConfig = {
+export const ArtworkBody = (props: ArtworkBodyProps) => {
+	const artworkBodyConfig: ArtworkBodyConfig = {
 		mesh: {
 			position: [0, 0, 0.1],
 			rotation: [0, 0, 0],

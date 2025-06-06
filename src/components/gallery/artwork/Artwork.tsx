@@ -1,4 +1,4 @@
-import type { ArtworkFrameProps } from "../../../types/index..ts";
+import type { ArtworkFrameProps } from "../../../types/index.ts";
 import { ArtworkBody } from "./artworkBody/ArtworkBody.tsx";
 import { ArtworkFrame } from "./artworkFrame/ArtworkFrame.tsx";
 

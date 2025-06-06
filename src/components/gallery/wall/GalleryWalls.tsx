@@ -1,4 +1,4 @@
-import type { WallData } from "../../../types/index..ts";
+import type { WallData } from "../../../types/index.ts";
 import { GalleryWall } from "./GalleryWall.tsx";
 
 const wallData: WallData[] = [

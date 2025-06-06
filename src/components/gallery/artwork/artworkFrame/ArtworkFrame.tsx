@@ -1,7 +1,7 @@
-import type { ArtworkFrameConfig } from "../../../../types/index..ts";
+import type { ArtworkFrameConfig } from "../../../../types/index.ts";
 
 export const ArtworkFrame = () => {
-	const artworkFlameConfig: ArtworkFrameConfig = {
+	const artworkFrameConfig: ArtworkFrameConfig = {
 		mesh: {
 			position: [0, 0, 0.02],
 			rotation: [0, 0, 0],
@@ -13,7 +13,7 @@ export const ArtworkFrame = () => {
 			color: "#8B4513",
 		},
 	};
-	const { mesh, geometry, material } = artworkFlameConfig;
+	const { mesh, geometry, material } = artworkFrameConfig;
 	return (
 		<>
 			<mesh rotation={mesh.rotation} position={mesh.position}>

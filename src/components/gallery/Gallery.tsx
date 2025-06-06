@@ -1,4 +1,4 @@
-import type { ArtworkData } from "../../types/index..ts";
+import type { ArtworkData } from "../../types/index.ts";
 import { Artwork } from "./artwork/Artwork.tsx";
 import { GalleryCeiling } from "./ceiling/GalleryCeiling.tsx";
 import { GalleryFloor } from "./floor/GalleryFloor.tsx";
