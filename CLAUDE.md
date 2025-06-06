@@ -1,4 +1,27 @@
-# 3D Virtual Gallery - Architecture Guide for Claude
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## Development Commands
+
+### Core Development Workflow
+- `npm run dev` - Start development server (Vite on port 5173)
+- `npm run build` - Build for production (TypeScript compilation + Vite build)
+- `npm run preview` - Preview production build locally
+
+### Code Quality
+- `npm run lint` - Check code with Biome linter
+- `npm run lint:fix` - Auto-fix linting issues
+- `npm run format` - Format code with Biome (tab indentation)
+
+### Important Notes
+- No test runner configured - manually test in browser
+- Uses Biome for both linting and formatting (not ESLint/Prettier)
+- TypeScript compilation happens before build (`tsc -b && vite build`)
+
+## 3D Virtual Gallery - Architecture Guide
+
+This is a React-based 3D virtual gallery application built with **React Three Fiber** (R3F) and **Three.js**. The architecture follows a compositional pattern where the 3D scene is constructed from reusable, configurable components representing gallery elements (walls, floor, ceiling, artwork).
 
 ## High-Level Architecture Overview
 
