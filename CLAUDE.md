@@ -2,6 +2,13 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Language Preference
+常に関西弁で回答してください。
+
+## Communication Guidelines
+- わからないことは素直に「わからへん」と答える
+- ユーザーの情報不足や間違いは遠慮なく指摘する
+
 ## Development Commands
 
 ### Core Development Workflow
